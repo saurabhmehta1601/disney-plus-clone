@@ -24,7 +24,7 @@ background-color:var(--clr-light-2) ;
         top:-6px ;  
    }
 
-    &:after{ 
+    &:after{  
         content: "" ; 
         height:2px;
         width:100%; 
