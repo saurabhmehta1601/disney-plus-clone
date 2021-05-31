@@ -4,7 +4,7 @@ export default function HamburgerMenu(){
     return (
         <Menu> 
         </Menu>
-    )
+    ) 
 }
 
 const Menu = styled.div`
