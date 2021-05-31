@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+:root{
+  --clr-light-1:rgb(255,255,255) ;
+  --clr-light-2: rgb(218, 218, 218) ;
+  --clr-black-1:rgb(0,0,0) ;
+  --clr-black-2: rgb(3, 11, 23) ;
+  --clr-black-3:rgb(12,17,27) ;
+  --clr-blue-1:rgb(23, 23, 23) ;
+  --clr-blue-2 : rgb(25, 33, 51);   
+  --clr-blue-3:rgb(51, 67, 102);
+  --clr-blue-4:rgb(31, 128, 224);
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }

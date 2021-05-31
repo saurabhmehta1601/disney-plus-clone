@@ -1,4 +1,6 @@
-export default function Home(){
 
-    return <>Welcome</>
+const Home = () => {
+    return <>Helllo world</>
 }
+
+export default Home
