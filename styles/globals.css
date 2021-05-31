@@ -1,12 +1,21 @@
+*{
+  margin:0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
 :root{
   --clr-light-1:rgb(255,255,255) ;
   --clr-light-2: rgb(218, 218, 218) ;
   --clr-black-1:rgb(0,0,0) ;
   --clr-black-2: rgb(3, 11, 23) ;
   --clr-black-3:rgb(12,17,27) ;
-  --clr-blue-1:rgb(23, 23, 23) ;
-  --clr-blue-2 : rgb(25, 33, 51);   
-  --clr-blue-3:rgb(51, 67, 102);
-  --clr-blue-4:rgb(31, 128, 224);
+  --clr-black-4:rgb(23, 23, 23) ;
+  --clr-blue-1 : rgb(25, 33, 51);   
+  --clr-blue-2:rgb(51, 67, 102);
+  --clr-blue-3:rgb(31, 128, 224);
+}
 
+body{
+  font-family: Roboto, "Helvetica Neue",sans-serif;
 }
