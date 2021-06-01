@@ -19,7 +19,6 @@ const Header = () => {
             <div className="kids"><Image src="/kids-logo.svg" width={47} height={14} /></div>
         </NavLinksList>  
         <SearchInput  >
-            <div className="blank-space"></div>
             <input placeholder="Search" type="search" placeholderTextColor="white" />
         </SearchInput>
         <SubscribeButton>SUBSCRIBE</SubscribeButton>
@@ -51,10 +50,10 @@ column-gap: 1.8rem ;
 margin-left : 1.6rem ;
 margin-bottom:-.1rem ;
 color:var(--clr-light-2) ;
-
 .new{
+
     position:relative ;
-    &:after{
+    &:after{  
         content:"NEW" ;
         position: absolute;
         bottom:-12px ;
@@ -71,8 +70,13 @@ color:var(--clr-light-2) ;
 `
 
 const SearchInput = styled.div` 
-    padding-left: 45px ;
-    input{ 
+    margin-left:22px ;
+    height:40px ; 
+    width:300px;
+    position:relative ;
+    input{
+        position:absolute ;
+        right:0 ;
         color:var(--clr-light-2) ; 
         border:none ;
         outline: none ;
@@ -81,10 +85,10 @@ const SearchInput = styled.div`
         padding: 0.3rem ;
         border-bottom : 1px solid var(--clr-light-2) ; 
         transition: all 0.3s ;
+
         &:active,&:focus{
-            margin-left: -35px;
-            width:calc(100% + 60px) ;
             border-bottom : 1px solid var(--clr-blue-3) ;
+            width:100% ;
         }
         &::-webkit-input-placeholder {
             color: var(--clr-light-2); 
