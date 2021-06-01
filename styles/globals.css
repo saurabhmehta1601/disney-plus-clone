@@ -18,5 +18,6 @@
 
 body{
   font-family: Roboto, "Helvetica Neue",sans-serif;
-  background-color:var(--clr-blue-1)
+  background-color:var(--clr-black-3) ;
+  color:var(--clr-light-2) ;
 }

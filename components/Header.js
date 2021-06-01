@@ -11,7 +11,7 @@ const Header = () => {
         </LogoImg>  
         <NavLinksList>
             <div>TV</div>
-            <div>Movies</div>   
+            <div>Movies</div>    
             <div>Sports</div>
             <div>News</div>
             <div>Premium</div> 
@@ -20,10 +20,10 @@ const Header = () => {
         </NavLinksList>  
         <SearchInput  >
             <input placeholder="Search" type="search" />
-        </SearchInput> 
-        <SubscribeButton>SUBSCRIBE</SubscribeButton>
-        <LoginButton>LOGIN</LoginButton>
-    </MyHeader> 
+        </SearchInput>   
+        <SubscribeButton>SUBSCRIBE</SubscribeButton> 
+        <LoginButton>LOGIN</LoginButton> 
+    </MyHeader>  
     )
 }  
  
@@ -34,7 +34,6 @@ const MyHeader= styled.div`
     padding: 1rem 1rem 1rem  4rem ;
     display:flex ; 
     align-items:center ;
-    background-color:var(--clr-blue-1) ;
 `
 
 const LogoImg = styled.div` 
