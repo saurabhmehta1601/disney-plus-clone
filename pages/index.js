@@ -1,6 +1,9 @@
+import MainCarousel from "../components/MainCarousel"
 
 const Home = () => {
-    return <>Helllo world</>
+    return <>
+    <MainCarousel>
+        </MainCarousel></>
 }
 
 export default Home

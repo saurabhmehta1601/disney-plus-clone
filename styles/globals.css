@@ -18,4 +18,5 @@
 
 body{
   font-family: Roboto, "Helvetica Neue",sans-serif;
+  background-color:var(--clr-blue-1)
 }
