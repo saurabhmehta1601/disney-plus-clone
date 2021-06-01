@@ -1,9 +1,9 @@
 import MainCarousel from "../components/MainCarousel"
 
 const Home = () => {
-    return <>
-    <MainCarousel>
-        </MainCarousel></>
+    return( <> 
+    <MainCarousel /> 
+    </>)
 }
 
 export default Home

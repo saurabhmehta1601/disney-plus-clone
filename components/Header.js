@@ -3,15 +3,15 @@ import HamburgerMenu from "./HamburgerMenu"
 import Image from "next/image"
 
 const Header = () => { 
-    return (
+    return ( 
     <MyHeader>
-        <HamburgerMenu />
+        <HamburgerMenu /> 
         <LogoImg>
             <Image width={120}  height={40} src="/disney-hotstar-logo-dark.svg"/>
-        </LogoImg> 
+        </LogoImg>  
         <NavLinksList>
             <div>TV</div>
-            <div>Movies</div>
+            <div>Movies</div>   
             <div>Sports</div>
             <div>News</div>
             <div>Premium</div> 
@@ -19,8 +19,8 @@ const Header = () => {
             <div className="kids"><Image src="/kids-logo.svg" width={47} height={14} /></div>
         </NavLinksList>  
         <SearchInput  >
-            <input placeholder="Search" type="search" placeholderTextColor="white" />
-        </SearchInput>
+            <input placeholder="Search" type="search" />
+        </SearchInput> 
         <SubscribeButton>SUBSCRIBE</SubscribeButton>
         <LoginButton>LOGIN</LoginButton>
     </MyHeader> 
@@ -108,7 +108,7 @@ const SubscribeButton = styled.button`
     font-weight: 600;
 `
 
-const LoginButton = styled.button` 
+const LoginButton = styled.button`  
     background:none ;
     border:none ;
     cursor:pointer ;
