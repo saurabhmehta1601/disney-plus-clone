@@ -22,7 +22,7 @@ const Header = () => {
             <input placeholder="Search" type="search" />
         </SearchInput>   
         <SubscribeButton>SUBSCRIBE</SubscribeButton> 
-        <LoginButton>LOGIN</LoginButton> 
+        <LoginButton>LOGIN</LoginButton>  
     </MyHeader>  
     )
 }  

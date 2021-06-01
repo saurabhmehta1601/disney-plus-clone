@@ -22,10 +22,23 @@ const MainCarousel = () => {
   return (
    <Carousel {...settings} >
        
+       <div className="slide">
+          <div className="slide-content">
+            <h3 className="slide-content-title">November Story</h3>
+            <h4 className="slide-content-category">StarPlus &#183; Hindi &#183; Drama</h4>
+            <h4 className="slide-content-desc">Streamed on Disney plus India to watch this  thriller show . </h4>
+          </div> 
+          <div className="slide-image">
+              <div className="image-gradient"></div>
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4720/994720-h"/>
+          </div>
+      </div>
+
       <div className="slide">
           <div className="slide-content">
             <h3 className="slide-content-title">November Story</h3>
             <h4 className="slide-content-category">StarPlus &#183; Hindi &#183; Drama</h4>
+            <h4 className="slide-content-desc">Streamed on Disney plus India to watch this  thriller show . </h4>
           </div> 
           <div className="slide-image">
               <div className="image-gradient"></div>
@@ -37,23 +50,13 @@ const MainCarousel = () => {
           <div className="slide-content">
             <h3 className="slide-content-title">November Story</h3>
             <h4 className="slide-content-category">StarPlus &#183; Hindi &#183; Drama</h4>
+            <h4 className="slide-content-desc">Streamed on Disney plus India to watch this  thriller show . </h4>
           </div> 
           <div className="slide-image">
               <div className="image-gradient"></div>
               <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4720/994720-h"/>
           </div>
-      </div>  
-
-      <div className="slide">
-          <div className="slide-content">
-            <h3 className="slide-content-title">November Story</h3>
-            <h4 className="slide-content-category">StarPlus &#183; Hindi &#183; Drama</h4>
-          </div> 
-          <div className="slide-image">
-              <div className="image-gradient"></div>
-              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4720/994720-h"/>
-          </div>
-      </div>  
+      </div>
 
     </Carousel>
   )
@@ -61,23 +64,23 @@ const MainCarousel = () => {
 }
 
 const Carousel= styled(Slider)`
-  width:100% ;
+  
   border-radius: 12px ;
+  width:92% ;
+  margin:auto ;
   margin-top:1.2rem ;
   height:61.5vh ;
+
   .slick-slider {
     margin:0  -15px;
   }
   
   .slick-slide { 
-    /* padding:10px; */
-    /* background-color:red; */
-    /* text-align:center; */
-    margin-right:15px;
-    margin-left:15px;
+    margin:0 15px;
 }
 
   .slide{
+    
     background-color:var(--clr-blue-1) ;
     position:relative ;
     min-height:61.5vh ; 
@@ -95,6 +98,14 @@ const Carousel= styled(Slider)`
       .slide-content-category{
         margin-top : 12px ;
         opacity: 0.6 ; 
+      }
+      .slide-content-desc{
+        margin-top : 22px ;
+        opacity: 0.8 ;
+        letter-spacing: 1px ;
+        line-height: 1.5 ;
+        font-weight: 300 ; 
+
       }
     }
     .slide-image{
