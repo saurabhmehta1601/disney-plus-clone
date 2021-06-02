@@ -1,6 +1,3 @@
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-
 import React from 'react'
 import styled from 'styled-components'
 import Slider from "react-slick"
@@ -56,7 +53,7 @@ const MainCarousel = () => {
               <div className="image-gradient"></div>
               <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4720/994720-h"/>
           </div>
-      </div>
+      </div> 
 
     </Carousel>
   )
@@ -69,15 +66,14 @@ const Carousel= styled(Slider)`
   display:flex ;
   justify-content:center ;
   width:100% ;
-  margin:auto ;
-  margin-top:1.2rem ;
-  height:59.5vh ;
-
+  margin:1.2rem auto 3rem auto  ;
+  height:65.5vh ;
+  padding-bottom:1rem ;
 
   .slide{
     background-color:var(--clr-blue-1) ;
     position:relative ;
-    min-height:59.5vh ; 
+    min-height:65.5vh ; 
     border-radius:12px ;
     overflow:hidden ;
 
@@ -99,7 +95,6 @@ const Carousel= styled(Slider)`
         letter-spacing: 1px ;
         line-height: 1.5 ;
         font-weight: 300 ; 
-
       }
     }
     .slide-image{
@@ -119,10 +114,17 @@ const Carousel= styled(Slider)`
     }
   }
 
-  
 .slick-slide { 
     margin:0 40px 0 -30px;
     padding:12px;
+}
+
+li.slick-active {
+  button{
+    &:before{
+      color:white ;
+    }
+  }
 }
 
 `
