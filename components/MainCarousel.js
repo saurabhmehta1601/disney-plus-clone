@@ -66,24 +66,18 @@ const MainCarousel = () => {
 const Carousel= styled(Slider)`
   
   border-radius: 12px ;
-  width:92% ;
+  display:flex ;
+  justify-content:center ;
+  width:100% ;
   margin:auto ;
   margin-top:1.2rem ;
-  height:61.5vh ;
+  height:59.5vh ;
 
-  .slick-slider {
-    margin:0  -15px;
-  }
-  
-  .slick-slide { 
-    margin:0 15px;
-}
 
   .slide{
-    
     background-color:var(--clr-blue-1) ;
     position:relative ;
-    min-height:61.5vh ; 
+    min-height:59.5vh ; 
     border-radius:12px ;
     overflow:hidden ;
 
@@ -124,6 +118,13 @@ const Carousel= styled(Slider)`
       }
     }
   }
+
+  
+.slick-slide { 
+    margin:0 40px 0 -30px;
+    padding:12px;
+}
+
 `
 
 export default MainCarousel
