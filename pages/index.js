@@ -1,5 +1,6 @@
 import MainCarousel from "../components/MainCarousel"
 import Playlist from "../components/Playlist"
+import Footer from "../components/Footer"
 
 const Home = () => {
     return( <> 
@@ -9,6 +10,7 @@ const Home = () => {
     <Playlist title="Shows Recommended For You "/> 
     <Playlist title="Popular Movies"/> 
     <Playlist title="Trending Now"/> 
+    <Footer />
     </>)
 }
 
