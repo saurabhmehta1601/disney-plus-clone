@@ -12,19 +12,48 @@ const Footer = () => {
                     <Link>Privacy Policy</Link>
                     <Link>FAQ</Link>
                     <Link>Feedback</Link>
-                    <Link>Careers</Link>
+                    <Link>Careers</Link> 
                 </Links>
                 <p>© 2021 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
             </Section>
             {/* section 2 */} 
-            <Section>
-                <ConnectButton>
-                    <i className="fab fa-twitter"/>
-                </ConnectButton>
-                <ConnectButton>
-                    <i className="fab fa-facebook-f"/>
-                </ConnectButton>
-            </Section>
+            <ButtonsSection>
+
+              <div>
+                  <p>Connect with us </p>
+                  <div className="button-group">
+                    <ConnectButton>
+                        <i className="fab fa-twitter"/>
+                    </ConnectButton>
+                    <ConnectButton>
+                        <i className="fab fa-facebook-f"/>
+                    </ConnectButton>
+                  </div>
+              </div>
+
+              <div>
+                  <p>Disney+ Hotstar App </p>
+                    <div className="button-group">
+                    <DownloadButton >
+                    <img src="https://img.icons8.com/color/50/000000/google-play.png"/> 
+                        <div className="text-content">
+                        <p>GET IT ON</p>
+                        <h4>Google Play</h4>
+                        </div>
+                    </DownloadButton> 
+                    
+                    <DownloadButton >
+                    <img src="https://img.icons8.com/color/48/000000/apple-app-store--v3.png"/>
+                    <div className="text-content">
+                            <p style={{fontSize:'0.85rem'}}>Download on the</p>
+                            <h4>Apple Store</h4>
+                        </div>
+                </DownloadButton> 
+                    </div>
+              </div>
+
+                
+            </ButtonsSection>
         </MyFooter>
     )
     
@@ -44,32 +73,29 @@ const Links = styled.ul`
     /* margin-bottom:12px ; */
 `
 const Link = styled.li`
-    font-size: 0.95rem ;
+    font-size: 0.95rem ; 
     opacity: 0.9 ;
 `
 
 const Section = styled.section`
 height:100%;
 padding : 2rem  3rem ;
-
 p{
     margin-top:12px ;
     font-size: 0.85rem ;
     word-spacing:2px ;
     line-height: 1.2 ;
 }
-
 `
 
 const Button = styled.button`
-    width:48px ;
-    height:48px ;
     background-color:var(--clr-blue-1) ;
     border: none ;
+    margin:4px ;
     border-radius: 4px ;
+    color:white ;
     cursor:pointer ;
     i{  
-        color:white ;
         opacity: 0.67 ;
         font-size: 1.4rem ;
     }
@@ -84,5 +110,33 @@ const ConnectButton = styled(Button)`
     height:48px ;
 `
 const DownloadButton = styled(Button)`
-    
+    margin : 4px ;
+    display:flex ;
+    padding:5px 12px ;
+    align-items:center ;
+    width:200px ;
+
+    img{
+
+    }
+    .text-content{
+        text-align:left  ; 
+        opacity: 0.68;
+        margin-left:4px ;
+        margin-top : -10px ;
+        p{
+            font-size:0.66rem ;
+            font-weight:700 ; 
+        } 
+        h4{
+            font-size:1.2rem  ;
+        }
+    }
+`
+const ButtonsSection = styled(Section)`
+    column-gap:2rem ;
+    display:flex ; 
+    .button-group{
+        display:flex ;
+    }
 `

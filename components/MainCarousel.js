@@ -29,7 +29,7 @@ const MainCarousel = () => {
               <div className="image-gradient"></div>
               <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4720/994720-h"/>
           </div>
-      </div>
+      </div> 
 
       <div className="slide">
           <div className="slide-content">

@@ -106,7 +106,7 @@ const SubscribeButton = styled.button`
     font-size: 0.8rem ;
     font-weight: 600;
 `
-
+ 
 const LoginButton = styled.button`  
     background:none ;
     border:none ;
