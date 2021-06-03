@@ -73,7 +73,7 @@ const Links = styled.ul`
     /* margin-bottom:12px ; */
 `
 const Link = styled.li`
-    font-size: 0.95rem ; 
+    font-size: 0.95rem ;  
     opacity: 0.9 ;
 `
 
@@ -110,15 +110,16 @@ const ConnectButton = styled(Button)`
     height:48px ;
 `
 const DownloadButton = styled(Button)`
-    margin : 4px ;
+    margin : 6px ;
     display:flex ;
     padding:5px 12px ;
     align-items:center ;
     width:200px ;
 
     img{
-
+        height:36px ;
     }
+
     .text-content{
         text-align:left  ; 
         opacity: 0.68;
@@ -136,6 +137,11 @@ const DownloadButton = styled(Button)`
 const ButtonsSection = styled(Section)`
     column-gap:2rem ;
     display:flex ; 
+    p{
+        font-weight: 600 ;
+        opacity: 0.7 ;
+        font-size:0.81rem ; 
+    }
     .button-group{
         display:flex ;
     }
