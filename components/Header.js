@@ -73,6 +73,7 @@ const SearchInput = styled.div`
     height:40px ; 
     width:300px;
     position:relative ;
+
     input{
         position:absolute ;
         right:0 ;
@@ -83,8 +84,7 @@ const SearchInput = styled.div`
         font-size:1.05rem ; 
         padding: 0.3rem ;
         border-bottom : 1px solid var(--clr-light-2) ; 
-        transition: all 0.3s ;
-
+        
         &:active,&:focus{
             border-bottom : 1px solid var(--clr-blue-3) ;
             width:100% ;
@@ -110,7 +110,7 @@ const SubscribeButton = styled.button`
 const LoginButton = styled.button`  
     background:none ;
     border:none ;
-    cursor:pointer ;
+    cursor:pointer ; 
     font-size:0.95rem ; 
     font-weight: 600;
     margin-left: -0.9rem ;

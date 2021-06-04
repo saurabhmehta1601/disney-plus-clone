@@ -30,7 +30,7 @@ const MainCarousel = () => {
               <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4720/994720-h"/>
           </div>
       </div> 
-
+ 
       <div className="slide">
           <div className="slide-content">
             <h3 className="slide-content-title">November Story</h3>
@@ -66,7 +66,7 @@ const Carousel= styled(Slider)`
   display:flex ;
   justify-content:center ;
   width:100% ;
-  margin:1.2rem auto 3rem auto  ;
+  margin:0.3rem auto 3rem auto  ;
   height:65.5vh ;
   padding-bottom:1rem ;
 
@@ -126,7 +126,6 @@ li.slick-active {
     }
   }
 }
-
 `
 
 export default MainCarousel
