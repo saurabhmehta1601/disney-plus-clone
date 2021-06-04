@@ -128,4 +128,4 @@ li.slick-active {
 }
 `
 
-export default MainCarousel
+export default MainCarousel 

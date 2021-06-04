@@ -1,9 +1,14 @@
+import Head from "next/head"
 import MainCarousel from "../components/MainCarousel"
 import Playlist from "../components/Playlist"
 import Footer from "../components/Footer"
 
 const Home = () => {
-    return( <> 
+    return( <>
+    <Head>
+        <title>Home</title>    
+    </Head> 
+    
     <MainCarousel /> 
     <Playlist title="Latest & Trending"/> 
     <Playlist title="Movies Recommended For You "/> 

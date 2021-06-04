@@ -1,8 +1,18 @@
+import {useSelector,useDispatch} from "react-redux"
+import {login} from "../redux/userSlice"
+
 import styled from 'styled-components'
 import HamburgerMenu from "./HamburgerMenu"
 import Image from "next/image"
+ 
+const Header = () => {
+    const {name,email,avatar} = useSelector(state => state.user)
+    const dispatch = useDispatch()
+    const loginUser = () =>{    
+        dispatch(login({name:"saurabh",email:"saurabh@gmail",avatar:"my-avatar"}))
+        console.log(name,email,avatar)
+    }
 
-const Header = () => { 
     return ( 
     <MyHeader>
         <HamburgerMenu /> 
@@ -22,7 +32,7 @@ const Header = () => {
             <input placeholder="Search" type="search" />
         </SearchInput>   
         <SubscribeButton>SUBSCRIBE</SubscribeButton> 
-        <LoginButton>LOGIN</LoginButton>  
+        <LoginButton onClick={loginUser} >LOGIN</LoginButton>  
     </MyHeader>  
     )
 }  
@@ -114,9 +124,9 @@ const LoginButton = styled.button`
     font-size:0.95rem ; 
     font-weight: 600;
     margin-left: -0.9rem ;
-    padding:0.1rem 0.3rem ;
+    padding:0.1rem 0.3rem ; 
     color:var(--clr-light-2) ;
 `
 
 
-export default Header
+export default Header 

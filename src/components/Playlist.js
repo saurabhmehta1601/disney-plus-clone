@@ -93,7 +93,7 @@ const Playlist = ({title}) => {
 const Title = styled.h3`
 font-size: 1.28rem ;
 text-indent:1.45rem ; 
-margin-top:1rem ; 
+margin-top:1rem ;  
 opacity: 0.9 ;
 `
 

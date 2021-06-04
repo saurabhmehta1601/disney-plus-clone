@@ -47,7 +47,7 @@ const Footer = () => {
                     <div className="text-content">
                             <p style={{fontSize:'0.85rem'}}>Download on the</p>
                             <h4>Apple Store</h4>
-                        </div>
+                        </div> 
                 </DownloadButton> 
                     </div>
               </div>
