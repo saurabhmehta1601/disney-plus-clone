@@ -4,7 +4,7 @@ export default function HamburgerMenu(){
     return <Menu />
 }
 
-const Menu = styled.div`
+const Menu = styled.div` 
     width:18px;     
     height:1.2px ;
     background-color:var(--clr-light-2) ;

@@ -1,11 +1,11 @@
 import {useSelector,useDispatch} from "react-redux"
-import {login} from "../redux/userSlice"
+import {login} from "../vendors/redux/userSlice"
 
 import styled from 'styled-components'
 import HamburgerMenu from "./HamburgerMenu"
-import Image from "next/image"
- 
-const Header = () => {
+import Image from "next/image" 
+  
+const Header = () => { 
     const {name,email,avatar} = useSelector(state => state.user)
     const dispatch = useDispatch()
     const loginUser = () =>{    

@@ -7,7 +7,7 @@ const Footer = () => {
             {/* section 1 */}
             <Section >
                 <Links >
-                    <Link>About Disney+ Hotstar</Link>
+                    <Link>About Disney+ Hotstar</Link> 
                     <Link>Terms Of Use</Link>
                     <Link>Privacy Policy</Link>
                     <Link>FAQ</Link>

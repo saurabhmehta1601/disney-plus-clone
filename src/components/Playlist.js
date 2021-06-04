@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const Playlist = ({title}) => {
     
-    const settings={
+    const settings={ 
         dots:false,
         slidesToShow: 8,
         slidesToScroll: 8,

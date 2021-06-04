@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Header from "../components/Header"
 import Head from "next/head"
 
-import store from "../redux/store"
+import store from "../vendors/redux/store"
 import {Provider} from "react-redux"
 
 function MyApp({ Component, pageProps }) {
