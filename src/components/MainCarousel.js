@@ -124,7 +124,7 @@ li.slick-active {
     &:before{
       color:white ;
     }
-  } 
+  }  
 }
 `
 

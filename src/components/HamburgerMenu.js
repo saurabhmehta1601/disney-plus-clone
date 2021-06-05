@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export default function HamburgerMenu(){
-    return <Menu />
+    return <Menu onClick  />
 }
 
 const Menu = styled.div` 

@@ -1,17 +1,40 @@
-import {useSelector,useDispatch} from "react-redux"
-import {login} from "../vendors/redux/userSlice"
+import firebase from "../services/firebase"
+import {login,logout} from "../services/redux-toolkit/userSlice"
 
-import styled from 'styled-components'
-import HamburgerMenu from "./HamburgerMenu"
+import {useDispatch, useSelector} from 'react-redux'
+
+ 
+import HamburgerMenu from "./HamburgerMenu"  
 import Image from "next/image" 
-  
-const Header = () => { 
-    const {name,email,avatar} = useSelector(state => state.user)
+import styled from 'styled-components' 
+
+const Header = () => {
     const dispatch = useDispatch()
-    const loginUser = () =>{    
-        dispatch(login({name:"saurabh",email:"saurabh@gmail",avatar:"my-avatar"}))
-        console.log(name,email,avatar)
+    const user = useSelector(state => state.user)
+
+    console.log("logged user inititally ",user)
+
+
+ 
+    const loginUser = () =>{ 
+        const GoogleProvider = new firebase.auth.GoogleAuthProvider
+        firebase.auth().signInWithPopup(GoogleProvider)  
+        .then((result) => {
+            const  { displayName:name , photoURL:avatar , email }= result.user
+            dispatch(login({name,avatar,email}))
+        }) 
+        .catch(err =>{
+            
+        }) 
     }
+ 
+    const logoutUser = () =>{
+        firebase.auth().signOut().then(()=>{
+            dispatch(logout())
+        })
+
+    }
+
 
     return ( 
     <MyHeader>
@@ -28,17 +51,18 @@ const Header = () => {
             <div className="new">Disney+</div> 
             <div className="kids"><Image src="/kids-logo.svg" width={47} height={14} /></div>
         </NavLinksList>  
-        <SearchInput  >
+        <SearchInput  > 
             <input placeholder="Search" type="search" />
         </SearchInput>   
         <SubscribeButton>SUBSCRIBE</SubscribeButton> 
-        <LoginButton onClick={loginUser} >LOGIN</LoginButton>  
+     {user.name==="" ?    <AuthButton onClick={loginUser} >LOGIN</AuthButton>  :
+        <AuthButton onClick={logoutUser} >LOGOUT</AuthButton>  } 
     </MyHeader>  
     )
 }  
- 
-  
-const MyHeader= styled.div`
+
+
+const MyHeader= styled.div` 
     color:var(--clr-black-2); 
     height:76px;
     padding: 1rem 1rem 1rem  4rem ;
@@ -117,7 +141,7 @@ const SubscribeButton = styled.button`
     font-weight: 600;
 `
  
-const LoginButton = styled.button`  
+const AuthButton = styled.button`  
     background:none ;
     border:none ;
     cursor:pointer ; 

@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 
 const Playlist = ({title}) => {
-    
+        
     const settings={ 
         dots:false,
         slidesToShow: 8,

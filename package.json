@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:storage": "firebase deploy --only storage",
+    "deploy:firestore": "firebase deploy --only firestore"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
